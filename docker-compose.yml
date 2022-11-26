@@ -1,13 +1,13 @@
 version: "3.9"
 services:
   rtmp:
-    build: ./rtmp
+    build: ./RTMP
     ports:
     - "1935:1935"
     container_name: rtmp_server
 
   auth:
-    build: ./auth
+    build: ./Auth
     container_name: auth_server
 
   client:
