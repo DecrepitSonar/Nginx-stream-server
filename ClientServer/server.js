@@ -6,6 +6,7 @@ app.use(bodyParser.urlencoded({extended: false }))
 
 app.set("port", 8080)
 app.get('/', (req,res ) => {
+  console.log("server endpoint reached")
   res.send("Application")
 })
 
