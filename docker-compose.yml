@@ -4,6 +4,7 @@ services:
     build: ./NGINX
     ports:
     - "1935:1935"
+    - "8000:8000"
     container_name: rtmp_server
 
   auth:
